@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:white;
+  margin: 10px 10px;
+  padding: 20px;
+  background-image:url(/images/_\ \(46\).jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;      /* Adjusts the image to cover the entire container */
+  background-position: center; /* Centers the image in the container */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: -1; /* Ensure the overlay is behind your content */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: larger;
+  color:yellow;
+
+
+}
+
+#feed {
+  max-width: 600px;
+  margin: 0 auto;
+
+
+  
+}
+
+.post {
+  background:white;
+  border: 10px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height:350px;
+  font-size: x-large;
+}
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.like-button,
+.comment-button,
+.submit-comment {
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px 15px;
+  transition: background 0.2s, transform 0.2s;
+  font-size: xx-large;
+
+}
+
+.like-button.liked {
+  background:green;
+  transform: scale(1.1);
+  
+}
+
+.like-button:hover,
+.comment-button:hover,
+.submit-comment:hover {
+  background: #0056b3;
+  
+}
+
+.comments {
+  margin-top: 15px 15px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  
+}
+
+.comments textarea {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment-list li {
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.image {
+  justify-self: center;
+  height:200%;
+  padding: 0;
+  margin: 0;
+  width: 200%;
+  object-fit: cover;
+
+}

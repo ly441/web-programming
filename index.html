@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Social Feed Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <header>
+    <h1>Istagram</h1>
+  </header>
+  <div id="feed">
+    <div class="post" data-post-id="1">
+      <h2>Web Application</h2>
+      <p>Welcome to front end web application</p>
+      <div class="actions">
+        <button class="like-button" data-liked="false">&#9825; <span class="like-count">0</span></button>
+        <button class="comment-button">Comment</button>
+      </div>
+      <div class="comments" style="display: none;">
+        <textarea placeholder="Write a comment..."></textarea>
+        <button class="submit-comment">Submit</button>
+        <ul class="comment-list"></ul>
+      </div>
+    </div>
+
+  <script src="./script/script.js"></script>
+  <footer>&copy;all rights reserved.2025</footer>
+</body>
+</html>
