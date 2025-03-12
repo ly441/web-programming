@@ -1,11 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 10px 10px;
-  padding: 20px;
-  background-image:url(/images/_\ \(46\).jpeg);
+  background-image: url(/images/_\ \(46\).jpeg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;      /* Adjusts the image to cover the entire container */
-  background-position: center; /* Centers the image in the container */
+ 
 }
 
 body::before {
@@ -110,12 +108,4 @@ header {
   border-radius: 4px;
   margin-bottom: 5px;
 }
-.image {
-  justify-self: center;
-  height:200%;
-  padding: 0;
-  margin: 0;
-  width: 200%;
-  object-fit: cover;
 
-}
