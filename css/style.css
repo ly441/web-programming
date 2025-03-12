@@ -45,8 +45,8 @@ header {
   margin-bottom: 20px;
   border-radius: 10px 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  height:350px;
+  width: 1000px;
+  height:400px;
   font-size: x-large;
 }
 
@@ -80,7 +80,7 @@ header {
 .like-button:hover,
 .comment-button:hover,
 .submit-comment:hover {
-  background: #0056b3;
+  background: rgb(255, 69, 0);
   
 }
 
