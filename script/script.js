@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let liked = this.getAttribute('data-liked') === 'true';
     const likeCountSpan = this.querySelector('.like-count');
     let count = parseInt(likeCountSpan.textContent, 10);
+    currentCount++;
+    likeCountSpan.textContent = currentCount;
 
     // Get the text node that contains the heart icon
     // Assuming the first child is a text node containing the heart
